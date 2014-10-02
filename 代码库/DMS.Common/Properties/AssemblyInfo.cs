@@ -21,6 +21,7 @@ using System.Runtime.InteropServices;
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
 [assembly: Guid("34399354-275d-4b54-9562-4b478162bf00")]
+[assembly: log4net.Config.XmlConfigurator(ConfigFile = "Web.config", Watch = true)]
 
 // 程序集的版本信息由下面四个值组成:
 //
