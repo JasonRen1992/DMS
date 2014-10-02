@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMS.Common", "DMS.Common\DM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMS.Controllers", "DMS.Controllers\DMS.Controllers.csproj", "{4D8BEB93-5F10-4E7F-977C-5AC553C6C3B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "External-Bin", "External-Bin\External-Bin.csproj", "{851C3629-B6E8-41FE-9F7B-D609CAB71C6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{4D8BEB93-5F10-4E7F-977C-5AC553C6C3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D8BEB93-5F10-4E7F-977C-5AC553C6C3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D8BEB93-5F10-4E7F-977C-5AC553C6C3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851C3629-B6E8-41FE-9F7B-D609CAB71C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851C3629-B6E8-41FE-9F7B-D609CAB71C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851C3629-B6E8-41FE-9F7B-D609CAB71C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851C3629-B6E8-41FE-9F7B-D609CAB71C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
