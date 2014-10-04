@@ -1,4 +1,6 @@
 ﻿using DMS.Common.Utils;
+using DMS.IBLL;
+using Microsoft.Practices.Unity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,8 @@ namespace DMS.Controllers
 {
     public class HomeController : Controller
     {
+        [Dependency]
+        public IHomeBLL homeBLL { get; set; }
         public ActionResult Index()
         {
             ViewBag.Message = "修改此模板以快速启动你的 ASP.NET MVC 应用程序。";

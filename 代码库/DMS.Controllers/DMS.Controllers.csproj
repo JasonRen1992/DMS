@@ -36,6 +36,9 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\External-Bin\Packages\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
@@ -68,6 +71,10 @@
     <ProjectReference Include="..\DMS.Common\DMS.Common.csproj">
       <Project>{dfe7d29f-868c-430e-a14b-d5ccfadb0a75}</Project>
       <Name>DMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DMS.IBLL\DMS.IBLL.csproj">
+      <Project>{240c4ce7-a2a2-4d29-a358-907e4fcee32c}</Project>
+      <Name>DMS.IBLL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
