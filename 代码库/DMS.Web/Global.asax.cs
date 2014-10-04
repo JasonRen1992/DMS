@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DMS.Core;
+using Microsoft.Practices.Unity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,8 +23,15 @@ namespace DMS.Web
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //启用压缩
+            BundleTable.EnableOptimizations = true;
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
+            //注入 Ioc
+            var container = new UnityContainer();
+            DependencyRegisterType.Container_Sys(ref container);
+            DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
 }

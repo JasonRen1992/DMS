@@ -44,6 +44,10 @@
       <HintPath>..\External-Bin\Packages\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Bin\Packages\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -497,6 +501,10 @@
     <ProjectReference Include="..\DMS.Controllers\DMS.Controllers.csproj">
       <Project>{4d8beb93-5f10-4e7f-977c-5ac553c6c3b4}</Project>
       <Name>DMS.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DMS.Core\DMS.Core.csproj">
+      <Project>{0eb517fc-8736-4567-8911-49a5db97da63}</Project>
+      <Name>DMS.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
