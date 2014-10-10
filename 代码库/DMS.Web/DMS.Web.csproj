@@ -175,6 +175,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\account.jpg" />
     <Content Include="Content\Images\head_bg.gif" />
     <Content Include="Content\themes\bootstrap\accordion.css" />
     <Content Include="Content\themes\bootstrap\calendar.css" />
@@ -512,6 +513,9 @@
     <Content Include="Content\themes\default\images\Thumbs.db" />
     <Content Include="Content\themes\gray\images\Thumbs.db" />
     <Content Include="Content\themes\metro\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\CheckCodeImg.ashx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

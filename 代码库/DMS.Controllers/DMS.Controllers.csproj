@@ -45,6 +45,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -64,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountController.cs" />
+    <Compile Include="Core\CheckCodeImg.ashx.cs" />
     <Compile Include="HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
