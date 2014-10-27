@@ -88,6 +88,12 @@ namespace DMS.Common.Models
         public string ConfirmPassword { get; set; }
     }
 
+    public class AccountModel
+    {
+        public string Id { get; set; }
+        public string TrueName { get; set; }
+    }
+
     public class ExternalLogin
     {
         public string Provider { get; set; }

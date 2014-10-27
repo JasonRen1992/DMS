@@ -1,4 +1,5 @@
 ﻿using DMS.Common.Utils;
+using DMS.Controllers.Core;
 using DMS.IBLL;
 using Microsoft.Practices.Unity;
 using System;
@@ -9,27 +10,13 @@ using System.Web.Mvc;
 
 namespace DMS.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         [Dependency]
         public IHomeBLL homeBLL { get; set; }
         public ActionResult Index()
         {
-            ViewBag.Message = "修改此模板以快速启动你的 ASP.NET MVC 应用程序。";
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "你的应用程序说明页。";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "你的联系方式页。";
-
+            accountEnt = this.GetUserEnt();
             return View();
         }
     }

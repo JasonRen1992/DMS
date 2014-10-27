@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DMS.Common.Utils;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -40,6 +41,7 @@ namespace DMS.Controllers.Core
                 chkCode += character[rnd.Next(character.Length)];
             }
             //写入Session
+            Logger.Debug(chkCode);
             context.Session["Code"] = chkCode;
             //创建画布
             Bitmap bmp = new Bitmap(codeW, codeH);
